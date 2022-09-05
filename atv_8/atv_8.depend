@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1662305163 source:c:\users\tiago\documents\ed_casa_estudo\atv_8\main.c
+	<stdio.h>
+	<stdlib.h>
+
