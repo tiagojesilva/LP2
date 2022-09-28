@@ -15,24 +15,28 @@ public class LigacaoTelefonica
        */
     
     private int numeroTelefoneOrigem;
+    private int numeroTelefoneDestino;
     private String nomeLocalidadeOrigem;
-    private int numeroLocalDestino;
+    private String nomeLocalidadeDestino;  
     private double valorTotalLigacao;
     
     private Tempo tempMomentoInicial;
     private Tempo tempMomentoTermino;
     
+    private Tempo tmp;
     
     /**
      * Construtor para objetos da classe LigacaoTelefonica
      */
-    public LigacaoTelefonica(int numeroTelefoneOrigem,String nomeLocalidadeOrigem, int numeroLocalDestino, double valorTotalLigacao, Tempo tempMomentoInicial, Tempo tempMomentoTermino)
+    public LigacaoTelefonica(int numeroTelefoneOrigem,int numeroTelefoneDestino, String nomeLocalidadeOrigem, String nomeLocalidadeDestino, double valorTotalLigacao, Tempo tempMomentoInicial, Tempo tempMomentoTermino)
     {
          // inicializa variáveis de instância
          this.numeroTelefoneOrigem = numeroTelefoneOrigem;
+         this.numeroTelefoneDestino = numeroTelefoneDestino;
          this.nomeLocalidadeOrigem = nomeLocalidadeOrigem;
-         this.numeroLocalDestino = numeroLocalDestino;
+         this.nomeLocalidadeDestino = nomeLocalidadeDestino;         
          this.valorTotalLigacao = valorTotalLigacao;
+         
          this.tempMomentoInicial = tempMomentoInicial;
          this.tempMomentoTermino = tempMomentoTermino;
     }
@@ -44,9 +48,10 @@ public class LigacaoTelefonica
      * @return     a soma de x e y 
      */
     
-    public void criarLigacaoTelefonica (Tempo tempMomentoInicial) {
+    public void criarLigacaoTelefonica (Tempo tempMomentoInicial, Tempo tempMomentoTermino, String nomeLocalidadeOrigem, String nomeLocalidadeDestino, int numeroTelefoneOrigem, int numeroTelefoneDestino) {
     
     
     }
-   
+    
+
 }
